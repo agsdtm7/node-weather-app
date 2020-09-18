@@ -23,11 +23,12 @@ footer {
 
 header {
     margin-top: 16px;
-    margin-bottom:48px;
+    margin-bottom:16px;
+    border-bottom: 1px solid #eeeeee;
 }
 
 h1{
-    font-size: 64px;
+    font-size: 24px;
     color: tomato;
 }
 
@@ -53,4 +54,41 @@ button {
     background: #888888;
     color: white;
     padding: 8px;
+}
+
+
+.forecast-content{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item{
+    padding: 10px;
+}
+
+#message-1, #message-2{
+    font-size: 1.6em;
+    font-weight: 700;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#message-3{
+    font-size: 2em;
+    font-weight: 400;
+    margin: auto auto;
+}
+
+#message-2, #message-4, #message-5{
+    font-size: 1em;
+    font-weight: 600;
+}
+
+#message-4, #message-5{
+    text-align:left;
+}
+
+.weather-icon{
+    display: block;
+    margin: auto;
 }
