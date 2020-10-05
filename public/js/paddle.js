@@ -29,7 +29,7 @@ export default class Paddle {
     }
 
     draw(abc) {
-        abc.fillStyle = '#0f0'
+        abc.fillStyle = '#00A'
         abc.fillRect(this.position.x, this.position.y, this.width, this.height)
     }
 
