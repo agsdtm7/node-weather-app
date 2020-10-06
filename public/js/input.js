@@ -16,10 +16,14 @@ export default class InputHandler {
                 case 27:
                     game.togglePause()
                     break
-                case 32:
-                    game.start()
-                    break
+                // case 32:
+                //     game.start()
+                //     break
             }
+        })
+
+        document.addEventListener('mousedown', () => {
+            game.start()
         })
 
         document.addEventListener('keyup', (event) => {

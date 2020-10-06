@@ -7,7 +7,6 @@ import Game from "./game.js"
 
 
 // ON THE CANVAS
-console.log("this is from canvas")
 let canvas = document.getElementById("gameScreen")
 let ctx = canvas.getContext("2d")
 
@@ -30,10 +29,7 @@ function gameLoop(timestamp) {
     game.draw(ctx)
     game.update(deltaTime)
 
-
-
     requestAnimationFrame(gameLoop)
-
 }
 
 gameLoop()

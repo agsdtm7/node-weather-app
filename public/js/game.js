@@ -65,7 +65,7 @@ export default class Game {
             ctx.fillStyle = "white"
             ctx.textAlign = "center"
             ctx.fillText("Error 404 Page", this.gameWidth / 2, this.gameHeight / 2 - 50)
-            ctx.fillText("Press SPACEBAR To Start", this.gameWidth / 2, this.gameHeight / 2)
+            ctx.fillText("Click Anywhere To Start", this.gameWidth / 2, this.gameHeight / 2)
         }
     }
 

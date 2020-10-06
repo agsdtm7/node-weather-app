@@ -16,7 +16,6 @@ export default class Paddle {
     }
 
     moveLeft() {
-        console.log('left')
         this.speed = -this.maxSpeed
     }
 
