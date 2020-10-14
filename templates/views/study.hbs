@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+</head>
+
+<body class="study-page">
+    <div class="main-content">
+        {{> header}}
+        <p>Study place</p>
+        <div class="single-item">
+            <ol class="study-terms">
+                <strong>Topics Covered in the Exam</strong>
+                {{#each topics}}
+                <li>{{this}}</li>
+                {{/each}}
+            </ol>
+            <ol class="study-terms">
+                {{#each terms}}
+                <li>{{{this}}}</li>
+                {{/each}}
+            </ol>
+            <ol start="12" class="study-terms">
+                {{#each terms2}}
+                <li>{{{this}}}</li>
+                {{/each}}
+            </ol>
+            <ol start="12" class="study-terms">
+                {{#each terms3}}
+                <li>{{{this}}}</li>
+                {{/each}}
+            </ol>
+        </div>
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.single-item').slick();
+    </script>
+    {{> footer}}
+</body>
+
+</html>

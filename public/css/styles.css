@@ -9,6 +9,15 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
+/* STUDY PAGE STYLING */
+.study-page{
+    background-color: white;
+    color: black;
+}
+ol.study-terms > li {
+    margin: 15px;
+}
+/* END OF STUDY PAGE STYLING */
 
 .main-content{
     flex-grow:1;
