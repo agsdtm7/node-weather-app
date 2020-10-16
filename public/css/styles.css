@@ -65,7 +65,6 @@ button {
     padding: 8px;
 }
 
-
 .forecast-content{
     display: grid;
     grid-template-columns: auto auto auto;

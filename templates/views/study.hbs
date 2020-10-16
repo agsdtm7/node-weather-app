@@ -15,6 +15,7 @@
         {{> header}}
         <p>Study place</p>
         <div class="single-item">
+            <!--
             <ol class="study-terms">
                 <strong>Topics Covered in the Exam</strong>
                 {{#each topics}}
@@ -31,19 +32,68 @@
                 <li>{{{this}}}</li>
                 {{/each}}
             </ol>
-            <ol start="12" class="study-terms">
+            <ol start="22" class="study-terms">
                 {{#each terms3}}
                 <li>{{{this}}}</li>
                 {{/each}}
             </ol>
+            <ol start="36" class="study-terms">
+                {{#each terms4}}
+                <li>{{{this}}}</li>
+                {{/each}}
+            </ol>
+            <ol start="47" class="study-terms">
+                {{#each terms5}}
+                <li>{{{this}}}</li>
+                {{/each}}
+            </ol>
+            <ol start="48" class="study-terms">
+                {{#each terms6}}
+                <li>{{{this}}}</li>
+                {{/each}}
+            </ol>
+            <ol start="61" class="study-terms">
+                {{#each terms7}}
+                <li>{{{this}}}</li>
+                {{/each}}
+            </ol>
+            <ol start="72" class="study-terms">
+                {{#each terms8}}
+                <li>{{{this}}}</li>
+                {{/each}}
+            </ol>
+            <ol start="85" class="study-terms">
+                {{#each terms9}}
+                <li>{{{this}}}</li>
+                {{/each}}
+            </ol>
+            -->
+            <div>
+                <strong>Terms from FTC</strong>
+                <embed src='/pdfs/realestateglossary.pdf' type='application/pdf' width='100%' height='700' />
+            </div>
+            <div>
+                <strong>Terms from California</strong>
+                <embed src='/pdfs/dictionarycare.pdf' type='application/pdf' width='100%' height='700' />
+            </div>
+            <div>
+                <strong>Terms from IWU (Illinois Wesleylan University)</strong>
+                <embed src='/pdfs/glossaryiwu.pdf' type='application/pdf' width='100%' height='700' />
+            </div>
+            <div>
+                <strong>Terms from Philadelphia</strong>
+                <embed src='/pdfs/dictionarypare.pdf' type='application/pdf' width='100%' height='700' />
+            </div>
+
         </div>
     </div>
+
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
-        $('.single-item').slick();
+        $('.single-item').slick()
     </script>
     {{> footer}}
 </body>
